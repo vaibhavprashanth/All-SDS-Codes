@@ -1,0 +1,20 @@
+from bs4 import BeautifulSoup as bs
+import requests
+link="https://www.amazon.in/Attack-Titan-Sampler-Hajime-Isayama-ebook/dp/B00NNUD89Y/ref=sr_1_3?keywords=manga&qid=1660706899&sr=8-3"
+page=requests.get(link)
+page.content
+
+#apply BeautifulSoup to parse the page
+soup=bs(page.content,'html.parser')
+#transform raw html into structured from using the prettify()
+print(soup.prettify())
+
+#names are tagged under span. first we need to use the function called find_all() to find the parent node of the review then locate al the elements
+#once we find all the elements in span store it in empty list called 'name'
+#names of the review
+name=soup.find_all('span',class_='a-profile-name')
+name
+cust_name[]
+for i in range(0,len(name)):
+    cust_name.append(name[i].get_text())
+cust_name

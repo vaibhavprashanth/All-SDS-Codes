@@ -1,0 +1,9 @@
+Central Limit Theorem		Done
+Confidence Intervals 		Done
+Continuity Correction		No clue
+Factors Affecting MOE 		How is it data specific
+Hypthesis Testing		Done
+Normal Probablity Plot		Done
+Sampling			Done
+Sampling Mean			Done
+Student_t			Doesn't work
